@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            position: relative;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: blue;
+
+        }
+        li{
+            list-style: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .container{
+            width: 1280px;
+            margin: auto;
+        }
+
+        .navbar{
+            width: 95%;
+            margin: auto;
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px ;
+        }
+
+      
+
+        .Home, .About, .Contact{
+            height: 720px;
+            margin-top: 70px;
+            border: 1px solid black;
+        }
+
+         .About, .Contact{
+            margin-top: 0;
+         }
+
+        @media(max-width:1280px){
+            .container{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-link"><a href="">Home</a></li>
+                    <li class="nav-link"><a href="">About</a></li>
+                    <li class="nav-link"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="Home">
+                <h1>Home</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="About">
+                <h1>About</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="Contact">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
